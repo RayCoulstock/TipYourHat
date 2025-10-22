@@ -2792,6 +2792,25 @@
     "pl": "Liczba nowych produktów",
     "ja": "最新商品数"
   },
+  "i18n.NumberOfCommingSoonProducts": {
+  "default": "Number of coming soon products",
+  "fr": "Nombre de produits à venir",
+  "it": "Numero di prodotti in arrivo",
+  "zh": "即将上市的产品数量",
+  "de": "Anzahl der bald erhältlichen Produkte",
+  "es": "Número de productos próximos",
+  "nl": "Aantal binnenkort beschikbare producten",
+  "pt": "Número de produtos em breve disponíveis",
+  "pt-BR": "Número de produtos que chegarão em breve",
+  "sv": "Antal kommande produkter",
+  "es-MX": "Cantidad de productos próximos a lanzarse",
+  "es-419": "Cantidad de productos próximos a lanzarse",
+  "da": "Antal kommende produkter",
+  "no": "Antall kommende produkter",
+  "ko": "출시 예정 상품 수",
+  "pl": "Liczba nadchodzących produktów",
+  "ja": "近日発売予定の商品数"
+  },
   "i18n.ProductSaleBadges": {
     "default": "Product sale badges",
     "fr": "Badges de produit remisé",

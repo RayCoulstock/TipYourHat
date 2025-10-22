@@ -1,13 +1,13 @@
 {
-  "name": "Cornerstone",
-  "version": "6.17.0",
+  "name": "Tip Your Hat - Cornerstone",
+  "version": "0.2.0",
   "template_engine": "handlebars_v4",
   "meta": {
     "price": 0,
-    "documentation_url": "https://support.bigcommerce.com/articles/Public/Cornerstone-Theme-Manual",
-    "author_name": "BigCommerce",
-    "author_email": "support@bigcommerce.com",
-    "author_support_url": "https://support.bigcommerce.com/",
+    "documentation_url": "https://raycoulstock.me/support",
+    "author_name": "Ray Coulstock",
+    "author_email": "raycoulstock@hotmail.com",
+    "author_support_url": "https://raycoulstock.me/",
     "composed_image": "composed.png",
     "features": [
       "fully_responsive",
@@ -82,6 +82,7 @@
     "homepage_new_products_column_count": 4,
     "homepage_featured_products_column_count": 4,
     "homepage_top_products_column_count": 4,
+    "homepage_comming_soon_products_column_count": 4,
     "homepage_blog_posts_count": 3,
     "productpage_videos_count": 8,
     "productpage_reviews_count": 9,
@@ -437,7 +438,9 @@
         ]
       },
       "images": {},
-      "settings": {}
+      "settings": {
+        "headings-font": "Google_DidactGotham_400"
+      }
     },
     {
       "name": "Bold",
@@ -859,6 +862,34 @@
         "color_hover_product_sold_out_badges": "#000000",
         "focusTooltip-textColor": "#ffffff",
         "focusTooltip-backgroundColor": "#313440"
+      }
+    },
+    {
+      "name": "Fantasy",
+      "id": "fantasy",
+      "meta": {
+        "desktop_screenshot": "desktop_light.png",
+        "mobile_screenshot": "mobile_light.png",
+        "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+        "demo_url": "https://cornerstone-light-demo.mybigcommerce.com",
+        "optimized_for": [
+          "multi_purpose",
+          "mobile_tablet_desktop",
+          "sales_discounts",
+          "large_catalog"
+        ],
+        "industries": [
+          "home_garden"
+        ]
+      },
+      "images": {},
+      "settings": {
+        "headings-font": "Google_DidactGotham_400",
+        "homepage_featured_products_count": 3,
+        "homepage_featured_products_column_count": 3,
+        "homepage_new_products_column_count": 3,
+        "homepage_top_products_column_count": 3,
+        "homepage_comming_soon_products_column_count": 3
       }
     }
   ]
