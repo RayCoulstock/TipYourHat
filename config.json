@@ -890,7 +890,10 @@
         "homepage_featured_products_column_count": 3,
         "homepage_new_products_column_count": 3,
         "homepage_top_products_column_count": 3,
-        "homepage_comming_soon_products_column_count": 3
+        "homepage_comming_soon_products_column_count": 3,
+        "card--commingSoon-backgroundColor": "#f5f5f5",
+        "card--commingSoon-borderColor": "#dddddd",
+        "card--commingSoon-color--hover": "#333333"
       }
     }
   ]

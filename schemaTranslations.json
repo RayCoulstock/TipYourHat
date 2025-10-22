@@ -2811,6 +2811,25 @@
   "pl": "Liczba nadchodzących produktów",
   "ja": "近日発売予定の商品数"
   },
+  "i18n.ProductCardsCommingSoon": {
+  "default": "Product Cards Coming Soon",
+  "fr": "Cartes produits à venir",
+  "it": "Schede prodotto in arrivo",
+  "zh": "即将推出的产品卡",
+  "de": "Produktkarten bald verfügbar",
+  "es": "Tarjetas de producto próximas",
+  "nl": "Productkaarten binnenkort beschikbaar",
+  "pt": "Cartões de produto em breve disponíveis",
+  "pt-BR": "Cartões de produto que chegarão em breve",
+  "sv": "Produktkort kommer snart",
+  "es-MX": "Tarjetas de producto próximas a lanzarse",
+  "es-419": "Tarjetas de producto próximas a lanzarse",
+  "da": "Produktkort kommer snart",
+  "no": "Produktkort kommer snart",
+  "ko": "곧 출시될 상품 카드",
+  "pl": "Karty produktów wkrótce dostępne",
+  "ja": "近日公開予定の商品カード"
+  },
   "i18n.ProductSaleBadges": {
     "default": "Product sale badges",
     "fr": "Badges de produit remisé",
