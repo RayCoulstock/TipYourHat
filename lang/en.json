@@ -731,6 +731,7 @@
         "featured": "Featured Products",
         "file_option_set": "Currently: <a href=\"{url}\" target=\"_blank\">{name}</a>",
         "new": "New Products",
+        "comming-soon": "Coming Soon",
         "warranty": "Warranty Information",
         "reviews": {
             "hide": "Hide Reviews",
