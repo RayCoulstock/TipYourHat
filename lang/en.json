@@ -10,7 +10,8 @@
         "info": "Info",
         "categories": "Categories",
         "call_us": "Call us at {phone_number}",
-        "powered_by": "Powered by"
+        "powered_by": "Powered by",
+        "joke_of_the_day": "Joke of the Day"
     },
     "home": {
         "heading": "Home"
