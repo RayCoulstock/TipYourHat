@@ -71,11 +71,11 @@ gql: "query findPreOrderProducts {
     {{{region name="home_below_new_products"}}}
 
     {{#if gql.data.site.products}}
-        {{> components/products/coming-soon products=gql.data.site.products columns=theme_settings.homepage_comming_soon_products_column_count}}
+        {{> components/products/coming-soon products=gql.data.site.products.edges columns=theme_settings.homepage_comming_soon_products_column_count}}
     {{/if}}
     {{{region name="home_below_coming_soon_products"}}}
 
-    <div class="test">
+    <!-- <div class="test">
     {{#each gql.data.site.products.edges}}
         {{#if this.node.availabilityV2.status '==' 'Preorder'}}
             {{#with this.node}}
@@ -92,7 +92,7 @@ gql: "query findPreOrderProducts {
             {{/with}}
         {{/if}}
     {{/each}}
-    </div>
+    </div> -->
 </div>
 {{/partial}}
 {{> layout/base}}
