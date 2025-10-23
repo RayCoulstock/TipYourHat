@@ -54,27 +54,6 @@ gql: "query findPreOrderProducts {
         {{> components/common/alert/alert-info message}}
     {{/each}}
 
-<div class="main full">
-    {{#if products.featured}}
-        {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_featured_products"}}}
-
-    {{#if products.top_sellers}}
-        {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_top_products"}}}
-
-    {{#if products.new}}
-        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_new_products"}}}
-
-    {{#if gql.data.site.products}}
-        {{> components/products/coming-soon products=gql.data.site.products.edges columns=theme_settings.homepage_comming_soon_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_coming_soon_products"}}}
-
     <!-- <div class="test">
     {{#each gql.data.site.products.edges}}
         {{#if this.node.availabilityV2.status '==' 'Preorder'}}
@@ -93,6 +72,41 @@ gql: "query findPreOrderProducts {
         {{/if}}
     {{/each}}
     </div> -->
+
+<div class="page">
+    
+    <main class="page-content" id="product-listing-container">
+        {{#if products.featured}}
+            {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+        {{/if}}
+        {{{region name="home_below_featured_products"}}}
+
+        {{#if products.top_sellers}}
+            {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
+        {{/if}}
+        {{{region name="home_below_top_products"}}}
+
+        {{#if products.new}}
+            {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+        {{/if}}
+        {{{region name="home_below_new_products"}}}
+    </main>
+
+    <aside class="page-sidebar" id="faceted-search-container">
+        {{#if gql.data.site.products}}
+            {{> components/products/coming-soon products=gql.data.site.products.edges columns=theme_settings.homepage_comming_soon_products_column_count}}
+        {{/if}}
+        
+        {{{region name="sidebar-advert--global"}}} 
+        {{{region name="home_below_coming_soon_products"}}}
+    </aside>
+
 </div>
+
+<!-- <div class="main">
+    right side content
+    {{{region name="rightside_content--global"}}} 
+</div> -->
+
 {{/partial}}
 {{> layout/base}}
