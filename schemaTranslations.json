@@ -2812,7 +2812,7 @@
   "ja": "近日発売予定の商品数"
   },
   "i18n.ProductCardsCommingSoon": {
-  "default": "Product Cards Coming Soon",
+  "default": "Product Cards (coming soon)",
   "fr": "Cartes produits à venir",
   "it": "Schede prodotto in arrivo",
   "zh": "即将推出的产品卡",

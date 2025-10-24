@@ -40,6 +40,7 @@ gql: "query findPreOrderProducts {
   }
 }"
 ---
+
 {{#partial "hero"}}
     {{{region name="home_below_menu"}}}
     {{#and carousel carousel.slides.length}}
@@ -53,25 +54,6 @@ gql: "query findPreOrderProducts {
     {{#each shipping_messages}}
         {{> components/common/alert/alert-info message}}
     {{/each}}
-
-    <!-- <div class="test">
-    {{#each gql.data.site.products.edges}}
-        {{#if this.node.availabilityV2.status '==' 'Preorder'}}
-            {{#with this.node}}
-                <article class="card">
-                {{#if availabilityV2.message}}
-                    <p class="badge">Preorder</p>
-                    <p class="badge">{{availabilityV2.message}}</p>
-                {{else}}
-                    <p class="badge">Pre-order</p> 
-                    <p class="badge">Release coming soon</p>
-                {{/if}}
-                <p class="price">{{prices.price.value}} {{prices.price.currencyCode}}</p>
-                </article>
-            {{/with}}
-        {{/if}}
-    {{/each}}
-    </div>  -->
 
 <div class="page">
     
@@ -92,7 +74,7 @@ gql: "query findPreOrderProducts {
         {{{region name="home_below_new_products"}}}
     </main>
 
-    <aside class="page-sidebar commingSoon" id="faceted-search-container">
+    <aside class="page-sidebar rightSideBar" id="faceted-search-container">
         {{#if gql.data.site.products}}
             {{> components/products/coming-soon products=gql.data.site.products.edges columns=theme_settings.homepage_comming_soon_products_column_count}}
         {{/if}}
@@ -102,6 +84,39 @@ gql: "query findPreOrderProducts {
     </aside>
 
 </div>
+
+ <!-- 
+<script>
+function checkForPreOrderProducts(products) {
+    products.edges.forEach(function (product) {
+      if (product.node.availabilityV2.status === 'Preorder') {
+        return true;
+      }
+    });
+return false;
+}
+</script>
+
+ <div class="test">
+    {{#each gql.data.site.products.edges}}
+        {{#if this.node.availabilityV2.status '==' 'Preorder'}}
+            {{#with this.node}}
+                <article class="card">
+                {{#if availabilityV2.message}}
+                    <p class="badge">Preorder</p>
+                    <p class="badge">{{availabilityV2.message}}</p>
+                {{else}}
+                    <p class="badge">Pre-order</p> 
+                    <p class="badge">Release coming soon</p>
+                {{/if}}
+                <p class="price">{{prices.price.value}} {{prices.price.currencyCode}}</p>
+                </article>
+            {{/with}}
+        {{/if}}
+    {{/each}}
+</div> -->
+
+
 
 {{/partial}}
 {{> layout/base}}

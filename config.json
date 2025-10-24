@@ -1,6 +1,6 @@
 {
   "name": "Tip Your Hat - Cornerstone",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "template_engine": "handlebars_v4",
   "meta": {
     "price": 0,

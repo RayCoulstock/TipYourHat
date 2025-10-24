@@ -1,6 +1,10 @@
-.commingSoon {
+.rightSideBar {
     background-color: stencilColor("card--commingSoon-backgroundColor");
+    border-radius: 3em;
+    padding-top: 1em;
+}
 
+.commingSoon {
     .productCarousel {
         @include grid-row(
             $behavior: nest
@@ -8,7 +12,7 @@
         min-width: 100%;
         position: relative;
         width: 1px;
-        background-color: stencilColor("card--commingSoon-backgroundColor");
+        margin-bottom: 1em;
     }
 
     .productCarousel-slide { // 1
