@@ -1,6 +1,6 @@
 {
   "name": "Tip Your Hat - Cornerstone",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "template_engine": "handlebars_v4",
   "meta": {
     "price": 0,
@@ -173,7 +173,8 @@
     "color-greyLight": "#999999",
     "color-greyLighter": "#cccccc",
     "color-greyLightest": "#e5e5e5",
-    "color-comming-soon-border": "#ff0000",
+    "card--commingSoon-backgroundColor": "#f5f5f5",
+    "card--commingSoon-borderColor": "#dddddd",
     "banner--default-backgroundColor": "#707070",
     "button--default-color": "#666666",
     "button--default-colorHover": "#333333",
@@ -892,8 +893,7 @@
         "homepage_top_products_column_count": 3,
         "homepage_comming_soon_products_column_count": 3,
         "card--commingSoon-backgroundColor": "#f5f5f5",
-        "card--commingSoon-borderColor": "#dddddd",
-        "card--commingSoon-color--hover": "#333333"
+        "card--commingSoon-borderColor": "#dddddd"
       }
     }
   ]

@@ -1,4 +1,6 @@
 .commingSoon {
+    background-color: stencilColor("card--commingSoon-backgroundColor");
+
     .productCarousel {
         @include grid-row(
             $behavior: nest
@@ -6,6 +8,7 @@
         min-width: 100%;
         position: relative;
         width: 1px;
+        background-color: stencilColor("card--commingSoon-backgroundColor");
     }
 
     .productCarousel-slide { // 1
@@ -25,7 +28,8 @@
 
         .card {
             margin-bottom: 0;
-            border: 1px solid stencilColor("color-comming-soon-border");
+            border: 1px solid stencilColor("card--commingSoon-borderColor");
+            background-color: stencilColor("card--commingSoon-backgroundColor");
 
             .card-title {
                 overflow-wrap: break-word;

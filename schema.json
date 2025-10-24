@@ -1843,11 +1843,6 @@
         "id": "card--commingSoon-borderColor"
       },
       {
-        "type": "color",
-        "label": "i18n.TextHoverColor",
-        "id": "card--commingSoon-color--hover"
-      },
-      {
         "type": "heading",
         "content": "i18n.ImageSizes"
       },
